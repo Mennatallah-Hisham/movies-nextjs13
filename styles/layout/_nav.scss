@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.nav{
+    width:100%;
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: $clr-primary-shade;
+    padding:2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &__list{
+        @include flex-center;
+        gap:2rem;
+
+    }
+    &__link{
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        padding:0.3rem 2rem;
+        @include transition;
+        &:link,
+        &:visited{
+            color:$clr-txt;
+         
+        }
+
+        &:hover,
+        &:active{
+            border-bottom: 3px solid $clr-secondary;
+            background-color: rgba($clr-secondary,0.3);
+        }
+     
+    }
+}

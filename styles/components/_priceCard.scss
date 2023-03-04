@@ -1,0 +1,24 @@
+ @use '../abstracts' as *;
+.price-card{
+    width:32rem;
+    background-color: $clr-primary;
+    border-radius: $border-r-sm;
+    padding:2rem;
+    @include flex-col-center;
+    gap:3rem;
+    @include transition;
+
+    &:hover{
+        transform:translateY(1rem);
+        box-shadow: rgba($clr-secondary, 0.4) 0px 2px 18px 0px;
+    }
+}
+
+.price {
+
+    &__amount{
+        font-size:8rem;
+        color:$clr-secondary;
+        font-weight: 700;
+    }
+}

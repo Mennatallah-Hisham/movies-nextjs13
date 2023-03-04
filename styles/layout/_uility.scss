@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+.container{
+    max-width: 120rem;
+    // border:1px solid red;
+  
+    margin: 4rem auto;
+}
+
+.flex{
+    @include flex-row-center;
+    gap:7rem;
+    flex-wrap: wrap;
+
+}

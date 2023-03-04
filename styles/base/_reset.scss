@@ -1,0 +1,29 @@
+
+@use '../abstracts/variables' as *;
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: $clr-primary-shade;
+    color:$clr-txt;
+}
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border:none;
+    cursor: pointer;
+}
+ul{
+    list-style:none;
+}

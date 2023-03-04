@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+button{
+    padding:0.8rem 5rem;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+  @include transition;
+
+    &:hover{
+        transform: translateY(0.5rem) scale(1.2);
+        background-color:$clr-hover;
+    }
+
+}
+.btn--primary{
+    background-color: $clr-secondary;
+    color:$clr-txt;
+   
+
+
+}
