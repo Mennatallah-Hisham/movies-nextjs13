@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+.card{
+
+    width:32rem;
+    border-radius: $border-r-sm;
+    padding:2rem;
+    overflow: hidden;
+    @include flex-col-center;
+    gap:3rem;
+    @include transition;
+
+    &:hover{
+        transform:translateY(1rem);
+        box-shadow: rgba($clr-secondary, 0.4) 0px 2px 18px 0px;
+    }
+}

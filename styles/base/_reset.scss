@@ -20,6 +20,10 @@ body{
 a{
     text-decoration: none;
 }
+a:link,
+a:visited{
+    color:$clr-txt;
+}
 button{
     border:none;
     cursor: pointer;

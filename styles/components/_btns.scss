@@ -14,9 +14,14 @@ button{
 
 }
 .btn--primary{
-    background-color: $clr-secondary;
+    background-color: $clr-primary-shade;
     color:$clr-txt;
    
 
 
+}
+
+.btn--secondary{
+    background-color: $clr-secondary;
+    color:$clr-txt;
 }

@@ -4,7 +4,7 @@ import Film from "../icons/Film";
 export default function PriceCard({amount ,title}){
     return(
         <>
-        <article className="price-card">
+        <article className="price-card card">
             <Film/>
             <p class="txt--lg upper"> {title}</p>
             <div>
@@ -12,7 +12,7 @@ export default function PriceCard({amount ,title}){
             <p class="txt--sm txt-center"> per month</p>
             </div>
            
-            <button className="btn--primary">get started</button>
+            <button className="btn--secondary">get started</button>
         </article>
         </>
     )

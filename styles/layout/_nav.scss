@@ -2,12 +2,14 @@
 
 .nav{
     width:100%;
+    padding:2rem 2rem;
     position: sticky;
     top:0;
     left:0;
     background-color: $clr-primary-shade;
-    padding:2rem 2rem;
+  
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
 
     &__list{
         @include flex-center;

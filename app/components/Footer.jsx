@@ -1,6 +1,6 @@
 export default function Footer (){
    return( 
-   <footer>
+   <footer className="footer">
 
         <p className="txt txt-center">
             
