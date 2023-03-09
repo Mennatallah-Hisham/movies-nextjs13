@@ -2,7 +2,7 @@
 
 
 import Header from './components/Header';
-import Banner from './components/banner';
+import Banner from './components/Bgit anner';
 import Titles from './components/Titles';
 import Cards from './components/Cards';
 
