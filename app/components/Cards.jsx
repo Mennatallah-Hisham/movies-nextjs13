@@ -1,22 +1,29 @@
 import MovieCard from "./MovieCard";
 
 
-export default function Cards (){
+export default function Cards ({cards,type}){
+  
     return(
         <section className="container ">
-            <div className="txt-center margin-b-m">
-                <h1>title</h1>
-                <p> sub title</p>
-            </div>
+        
+
             <div className="flex">
-            <MovieCard/>
-            <MovieCard/>
-            <MovieCard/>
-            <MovieCard/>
-            <MovieCard/>
-            <MovieCard/>
-            <MovieCard/>
-            <MovieCard/>
+                {
+                   cards.map((card)=>(
+                        <MovieCard 
+                        type={type}
+                        key={card.id}
+                        id={card.id}
+                         title={card.title?
+                        card.title : card.name}
+                         vote={card.vote_average}
+                        img={card.poster_path}
+                            />
+                    ))
+                }
+                
+
+           
             </div>
          
         </section>

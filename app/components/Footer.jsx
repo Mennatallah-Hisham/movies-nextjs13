@@ -6,7 +6,7 @@ export default function Footer (){
             
         &#169; all rights reserved 2023. created by
         
-    <a href="" className="upper">mennatallah hesham</a>
+    <a href="" className="upper footer__link">mennatallah hesham</a>
         </p>
 
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Film from "../icons/Film";
 
 
@@ -12,7 +13,11 @@ export default function PriceCard({amount ,title}){
             <p class="txt--sm txt-center"> per month</p>
             </div>
            
-            <button className="btn--secondary">get started</button>
+            <button className="btn--secondary">
+                <Link href="/subscribe">
+                get started
+                </Link>
+             </button>
         </article>
         </>
     )

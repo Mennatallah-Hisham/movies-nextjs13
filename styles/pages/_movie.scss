@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.moviepg{
+
+    @include flex-center;
+    gap:10rem;
+    flex-wrap:wrap;
+
+    &__details{
+        width: 32rem;
+     
+    }
+    &__stat{
+      display: flex;
+      align-items: center;
+      gap:1rem;
+    }
+}

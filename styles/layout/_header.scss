@@ -1,0 +1,30 @@
+ @use "../abstracts" as *;
+.header{
+
+    height: 70vh;
+    background-image:
+    linear-gradient(to bottom,
+    rgba($clr-secondary, 0.4),
+     rgba($clr-secondary, 0.3),
+     rgba($clr-secondary, 0.5)
+    
+    
+    ),url("/images/banner-bg.jpg");
+   @include bgImg;
+   @include flex-center;
+  
+
+   &__title{
+    
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    line-height: 1.6;
+
+
+@include mdScreen{
+    font-size: 5rem;
+    width:60rem;
+}
+   }
+}

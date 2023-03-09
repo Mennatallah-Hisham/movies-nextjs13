@@ -1,20 +1,65 @@
-import PriceCard from "../components/PriceCard";
-import Film from "../icons/Film";
+export default function subscribe() {
+  return (
+    <>
+    <h1 className="heading--primary">enjoy your free time with us </h1>
+  
+    <form className="container form">
+      <div className="form__gp">
+        <label for="email" className="form__label">
+          email
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          className="form__input"
+          required
+        />
+      </div>
+      <div className="form__gp">
+        <label for="full name" className="form__label">
+          name
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          className="form__input"
+          required
+        />
+      </div>
+      <div className="form__gp">
+        <label for="password" className="form__label">
+        password
+        </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          className="form__input"
+          required
+        />
+      </div>
+      <div className="form__gp">
+        <label 
+        for="visa" 
+        className="form__label">
+          visa
+        </label>
+        <input
+         id="visa" 
+         type="tel" 
+         inputmode="numeric"
+          pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+           maxlength="19"
+            placeholder="xxxx xxxx xxxx xxxx"
+            className="form__input"
+            required
+            />
+      </div>
 
-export default function Subscribe (){
-    return(
-     <section>
-        <p className="txt--sub upper txt-center">get started now</p>
-    <h1 className="heading--primary margin-b-l">choose a plan
-
-</h1>
-
-<div className="flex container">
-<PriceCard title="1 month plan" amount="15"/>
-    <PriceCard title="12 months plan" amount="6"/>
-    <PriceCard title="6 months plan" amount="10"/>
-</div>
-
-        </section>
-    )
-    }
+      <button className="btn--secondary">subscribe now</button>
+    </form>
+    </>
+  );
+}

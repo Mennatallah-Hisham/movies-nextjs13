@@ -1,4 +1,4 @@
-
+@use "../abstracts/variables" as *;
 
 @mixin flex-center{
     display: flex;
@@ -19,4 +19,18 @@
 
 @mixin transition {
     transition: all 0.4s;
+}
+
+@mixin mdScreen{
+    @media (min-width:48em){
+        @content;
+    }
+}
+
+@mixin bgImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $border-r-sm;
+    width:100%;
 }

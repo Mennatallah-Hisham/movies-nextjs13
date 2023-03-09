@@ -1,17 +1,15 @@
-
 import MovieDetails from "@/app/components/MovieDetails";
 import Titles from "@/app/components/Titles";
 import Cards from "@/app/components/Cards";
-export default  async function movie ({params}){
+export default  async function show ({params}){
    
-    const {movie} =params;
-    const response= await fetch (`https://api.themoviedb.org/3/movie/${movie}?api_key=${process.env.API_KEY}`);
+    const {show} =params;
+    const response= await fetch (`https://api.themoviedb.org/3/tv/${show}?api_key=${process.env.API_KEY}`);
     const details = await response.json();
-    const similar =  await fetch (`https://api.themoviedb.org/3/movie/${movie}/similar?api_key=${process.env.API_KEY}`);
 
-    const movies = await similar.json();
+    const similar =  await fetch (`https://api.themoviedb.org/3/tv/${show}/similar?api_key=${process.env.API_KEY}`);
 
-
+    const shows = await similar.json();
 
     const imagePath = "https://image.tmdb.org/t/p/original/";
 
@@ -22,7 +20,7 @@ export default  async function movie ({params}){
             <img  src={`${imagePath}${details.poster_path} `} alt="title" height={400} width={320}/>
 
             <MovieDetails
-            name={details.title}
+            name={details.name}
             overview ={details.overview}
             popularity={details.popularity}
             status={details.status}
@@ -36,17 +34,16 @@ export default  async function movie ({params}){
 
 
         </section>
-         <section className="container">
-
-         <Titles title="similar movies"/>
-         { movies.results.length===0? <p className="txt txt-center">no smiliar movies found</p>
+        
+        { shows.results.length===0? <p className="txt txt-center">no smiliar tv shows found</p>
          :
-         <Cards cards={movies.results} type="movie" />
-         
-        }
-         
-     </section>
-     </>
+        <section className="container">
+
+            <Titles title="similar tv shows"/>
+            <Cards cards={shows.results} type="tvShow" />
+        </section>
+}
+        </>
     )
 
 }

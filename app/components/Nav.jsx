@@ -12,13 +12,11 @@ export default function Nav (){
                     <Link className="nav__link" href="/movies">movies</Link>
                 </li>
                 <li>
-                    <Link className="nav__link" href="/tvshows">tv shows</Link>
+                    <Link className="nav__link" href="/tv">tv shows</Link>
                 </li>
+            
                 <li>
-                    <Link className="nav__link" href="/trending">trending</Link>
-                </li>
-                <li>
-                    <Link  className="nav__link" href="/subscribe">subscribe</Link>
+                    <Link  className="nav__link" href="/pricing">pricing</Link>
                 </li>
             </ul>
         </nav>

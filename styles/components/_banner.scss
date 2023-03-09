@@ -1,13 +1,14 @@
 @use "../abstracts" as *;
 .banner{
-    // background-color:#f9fafb;
-    // background-image:linear-gradient(to bottom , rgba($clr-primary-shade,0.3) , rgba($clr-primary-tint ,0.4)), url("/images/banner-bg.jpg");
+
+  
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.82), rgba($clr-secondary, 0.73)),
     url("/images/banner-bg2.jpeg");
-    background-position: center;
-    background-size: contain;
-    border-radius: $border-r-sm;
+   @include bgImg;
+   background-repeat: repeat;
+   background-size: contain;
+
     padding:12rem 3rem;
     text-align: center;
     @include flex-col-center;
@@ -15,9 +16,16 @@
 
     &__title{
         color:$clr-primary-shade;
-        font-size: 4rem;
- 
-        max-width: 70%;
+        font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+
+
+@include mdScreen{
+    font-size: 5rem;
+    width:70rem;
+}
     }
 }
 

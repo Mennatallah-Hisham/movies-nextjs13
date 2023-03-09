@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.form{
+   
+    @include flex-col-center;
+    gap:3rem;
+ 
+    &__label{
+        display: block;
+        margin-bottom: 0.8rem;
+        text-transform: capitalize;
+        color:$clr-secondary;
+        font-size: 1.6rem;
+    }
+    &__input{
+        width: 32rem;
+        padding:1rem 2rem;
+        border-radius: 0.5rem;
+    }
+
+}
