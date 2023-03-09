@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as *;
 .footer{
-    position: absolute;
-    bottom: 0;
+ 
 background-color: $clr-primary-tint;
     width:100%;
     padding:1rem 2rem;
