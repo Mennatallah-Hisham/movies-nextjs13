@@ -2,7 +2,7 @@ export default function Footer (){
    return( 
    <footer className="footer">
 
-        <p className="txt txt-center">
+        <p className="txt-center">
             
         &#169; all rights reserved 2023. created by
         

@@ -8,7 +8,7 @@ export default function Banner (){
           get unlimited access to all movies and tv shows
          </h2>
          <button className="btn--primary">
-          <Link href="/subscribe">subscribe now</Link>
+          <Link href="/pricing">subscribe now</Link>
           
          </button>
         </section>

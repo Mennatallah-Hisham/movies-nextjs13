@@ -8,6 +8,9 @@ html{
 
     font-family: 'Golos Text', sans-serif !important;
 }
+.overflow-none{
+    overflow: hidden;
+}
 body{
     background-color: $clr-primary-shade;
     color:$clr-txt;
